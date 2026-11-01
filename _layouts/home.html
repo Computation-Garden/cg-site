@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>{{ page.title }} - {{ site.title }}</title>
+		{% include header.html %}
+	</head>
+	<body>
+		<div class="hero-jumbotron">
+			<div class="hero-title-block">
+				<img src="/assets/images/logo/white-eng@2x.png">
+			</div>
+		</div>
+		
+		<div class="page">
+			<div class="home-description">
+				Computation Garden (गणकवाटिका/gaṇakavāṭikā) is a website dedicated to explaining Computer Science topics as intuitively as possible, purely for the sake of learning and exploring the subject.
+			</div>
+	  
+			{{ content }}
+		
+		</div>
+	</body>
+</html>
