@@ -1,6 +1,21 @@
 @use 'variables'
 
 
+// fieldset and legend
+// ============================================================
+fieldset
+	background-color: variables.$themeColorTranslucent
+	border: 0
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.5)
+	margin-bottom: 20px
+	
+	legend
+		background-color: white
+		padding: 5px 10px
+		box-shadow: 0px 1px 2px rgba(0,0,0,0.5)
+		border-radius: 16px
+		font-weight: bold
+
 
 // inputs
 // ============================================================
@@ -18,9 +33,9 @@ input[type="month"],
 input[type="week"],
 textarea
 	border: 1px solid #ccc
-	padding: 3px
+	padding: 5px 10px
 	outline: none
-	font-size: 12px
+	font-size: 13px
 	color: #000
 	margin-left: 0
 	margin-right: 0
@@ -174,6 +189,7 @@ input[type="range"]
 		background: #fff
 		box-shadow: 0 1px 2px rgba(0, 0, 0, .2)
 		cursor: pointer
+		background-image: url("/assets/images/form/radio.png")
 	
 	// firefox track
 	&::-moz-range-track
@@ -192,6 +208,7 @@ input[type="range"]
 		background: #fff
 		box-shadow: 0 1px 2px rgba(0, 0, 0, .2)
 		cursor: pointer
+		background-image: url("/assets/images/form/radio.png")
 
 
 // disabled and readonly
@@ -222,7 +239,7 @@ button, input[type="submit"], input[type="reset"], input[type="button"]
 	background-repeat: repeat-x
 	border: 1px solid rgba(0,0,0,.1)
 	border-bottom-color: rgba(0, 0, 0, 0.1)
-	border-radius: 16px
+	border-radius: 4px
 	padding: 5px 10px
 	color: #444
 

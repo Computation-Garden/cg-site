@@ -1,0 +1,15 @@
+variable_prefix: "$"
+colour_prefix: "cd-"
+colour_postfix: ""
+comment_prefix: "/* "
+comment_newline_prefix: " * "
+comment_postfix: " */"
+output_file: "_sass/_colourdefs.sass"
+
+inputfiles:
+  - ./_sass/_cdefs/claret
+  - ./_sass/_cdefs/defpalette
+  - ./_sass/_cdefs/pop
+  - ./_sass/_cdefs/rams
+  - ./_sass/_cdefs/transparent-black
+  - ./_sass/_cdefs/transparent-white

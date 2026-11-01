@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>{{ page.title }} - diag - {{ site.title }} </title>
+		{% include header.html %}
+	</head>
+	<body>
+		<div class="diag-page">
+			
+			<img src="/assets/images/logo/olive-skt@0.5x.png">
+			
+			<h1>diag:<code>{{ page.title }}</code></h1>
+			<hr>
+	  
+			{{ content }}
+		
+		</div>
+	</body>
+</html>

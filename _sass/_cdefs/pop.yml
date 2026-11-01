@@ -1,0 +1,18 @@
+name: pop
+version: 1.0.0
+prefix: "#"
+postfix: ""
+swatches:
+  candy: "ff7faa"
+  crimson: "cc0000"
+  jade: "00994d"
+  lemon: "ffec1a"
+  light-blue: "00a0dd"
+  mandarin: "ff8833"
+  matisse: "355778"
+  paper: "fff1e5"
+  sky: "cce6ff"
+  slate: "262a33"
+  velvet: "593380"
+  wasabi: "96cc28"
+  wheat: "f2dfce"

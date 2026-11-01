@@ -1,0 +1,165 @@
+---
+layout: diag
+title: form-components
+---
+
+
+<h1>Form Components</h1>
+
+
+
+<fieldset>
+	<legend>Text Inputs</legend>
+	<div class="field">
+		<label for="name">text</label> <input type="text" id="name" name="name" placeholder="Enter your name">
+	</div>
+	<div class="field">
+		<label for="email">email</label> <input type="email" id="email" name="email" placeholder="you@example.com">
+	</div>
+	<div class="field">
+		<label for="password">password</label> <input type="password" id="password" name="password">
+	</div>
+	<div class="field">
+		<label for="search">search</label> <input type="search" id="search" name="search" placeholder="Search...">
+	</div>
+	<div class="field">
+		<label for="url">url</label> <input type="url" id="url" name="url" placeholder="https://example.com">
+	</div>
+	<div class="field">
+		<label for="tel">telephone</label> <input type="tel" id="tel" name="tel" placeholder="+91 98765 43210">
+	</div>
+</fieldset>
+
+
+<!--  number and range -->
+<fieldset>
+	<legend>Numbers</legend>
+	<div class="field">
+		<label for="age">number</label> <input type="number" id="age" name="age" min="0" max="120" value="25">
+	</div>
+	<div class="field">
+		<label for="volume">range</label> <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+	</div>
+</fieldset>
+
+
+<!--  date and time -->
+<fieldset>
+	<legend>Date & Time</legend>
+	<div class="field">
+		<label for="date">date</label> <input type="date" id="date" name="date">
+	</div>
+	<div class="field">
+		<label for="time">time</label> <input type="time" id="time" name="time">
+	</div>
+	<div class="field">
+		<label for="datetime">datetime-local</label> <input type="datetime-local" id="datetime" name="datetime">
+	</div>
+	<div class="field">
+		<label for="month">month</label> <input type="month" id="month" name="month">
+	</div>
+	<div class="field">
+		<label for="week">week</label> <input type="week" id="week" name="week">
+	</div>
+</fieldset>
+
+
+<!--  radio and checkbox -->
+<fieldset>
+	<legend>Choices</legend>
+	<div class="field inline">
+		<label>radio buttons</label> <label><input type="radio" name="gender" value="male"> male</label> <label><input type="radio" name="gender" value="female"> female</label> <label><input type="radio" name="gender" value="other"> other</label>
+	</div>
+	<div class="field inline">
+		<label>checkboxes</label> <label><input type="checkbox" name="skills" value="html"> html</label> <label><input type="checkbox" name="skills" value="css"> css</label> <label><input type="checkbox" name="skills" value="javascript"> javascript</label>
+	</div>
+</fieldset>
+
+
+<!--  select elements -->
+<fieldset>
+	<legend>Selection</legend>
+	<div class="field">
+		<label for="country">select</label> <select id="country" name="country">
+			<option value="">
+				-- choose a country --
+			</option>
+			<option value="india">
+				india
+			</option>
+			<option value="usa">
+				usa
+			</option>
+			<option value="uk">
+				uk
+			</option>
+			<option value="japan">
+				japan
+			</option>
+		</select>
+	</div>
+	<div class="field">
+		<label for="browser">datalist</label> <input list="browsers" id="browser" name="browser" placeholder="Choose or type a browser"> <datalist id="browsers">
+			<option value="Chrome">
+			</option>
+			<option value="Firefox">
+			</option>
+			<option value="Safari">
+			</option>
+			<option value="Edge">
+			</option>
+		</datalist>
+	</div>
+</fieldset>
+
+
+<!--  textarea -->
+<fieldset>
+	<legend>Long Text</legend>
+	<div class="field">
+		<label for="message">textarea</label> 
+		<textarea id="message" name="message" placeholder="Write something..."></textarea>
+	</div>
+</fieldset>
+
+
+<!--  file and color -->
+<fieldset>
+	<legend>Other Inputs</legend>
+	<div class="field">
+		<label for="file">file</label> <input type="file" id="file" name="file">
+	</div>
+	<div class="field">
+		<label for="color">color</label> <input type="color" id="color" name="color" value="#3498db">
+	</div>
+	<div class="field">
+		<label for="hidden">hidden</label> <input type="hidden" id="hidden" name="user_id" value="12345"> <small>hidden inputs aren't visible, but their value is submitted with the form.</small>
+	</div>
+</fieldset>
+
+
+<!--  disabled and readonly -->
+<fieldset>
+	<legend>Special States</legend>
+	<div class="field">
+		<label for="readonly">readonly</label> <input type="text" id="readonly" name="readonly" value="You can't edit me" readonly>
+	</div>
+	<div class="field">
+		<label for="disabled">disabled</label> <input type="text" id="disabled" name="disabled" value="I'm disabled" disabled>
+	</div>
+</fieldset>
+
+
+
+
+
+<!--  buttons -->
+<fieldset>
+	<legend>Buttons</legend>
+	<div class="buttons">
+		<input type="submit" value="submit">
+		<input type="reset" value="reset">
+		
+		<button type="button" onclick="alert('hello!')">normal button</button>
+	</div>
+</fieldset>

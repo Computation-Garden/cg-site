@@ -1,0 +1,15 @@
+name: default-palette
+version: 1.0.0
+prefix: "#"
+postfix: ""
+swatches:
+  "ruby": "EA0000"
+  "apatite": "32C5FF"
+  "sapphire": "0091FF"
+  "iolite": "6236FF"
+  "citrine": "FFBD00"
+  "amethyst": "B620E0"
+  "graphite": "6D7278"
+  "amber": "FA6400"
+  "emerald": "6DD400"
+  "amazonite": "44D7B6"

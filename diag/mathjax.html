@@ -1,0 +1,252 @@
+---
+layout: diag
+title: mathjax-test-page
+---
+
+
+<h1>MathJax Test</h1>
+
+
+<section>
+  <h2>Notation</h2>
+  <p>Inline mathematics: \(x^2 + y^2 = z^2\)</p>
+  <div class="math-block">\[\frac{a+b}{c+d}\]</div>
+  <p>Nested fractions:</p>
+  \[
+    \frac{1}{1+\frac{1}{1+\frac{1}{x}}}
+  \]
+  <p>Subscripts and superscripts:</p>
+  \[
+    x_1, x_2, \ldots, x_n
+    \qquad
+    a_i^j,\quad x_{n+1}^{(k)},\quad 2^{2^{2^n}}
+  \]
+</section>
+
+<section>
+  <h2>Set theory and DM</h2>
+  \[
+    A \cup B,\quad A \cap B,\quad A \setminus B
+  \]
+  \[
+    A \subseteq B,\quad A \supseteq B,\quad A \not\subseteq B
+  \]
+  \[
+    \mathcal{P}(A),\quad |A|,\quad
+    \emptyset,\quad \mathbb{N},\mathbb{Z},\mathbb{Q},\mathbb{R}
+  \]
+  <p>Cartesian products:</p>
+  \[
+    A \times B = \{(a,b)\mid a\in A,\ b\in B\}
+  \]
+  <p>Set comprehension:</p>
+  \[
+    S = \{x\in\mathbb{N}\mid x\bmod 2=0\}
+  \]
+</section>
+
+<section>
+  <h2>Logic and Boolean algebra</h2>
+  \[
+    \neg P,\quad P\land Q,\quad P\lor Q
+  \]
+  \[
+    P\implies Q,\quad P\iff Q
+  \]
+  \[
+    \forall x\in A,\quad \exists y\in B:\ R(x,y)
+  \]
+  <p>Boolean identities:</p>
+  \[
+    \neg(A\land B)=\neg A\lor\neg B
+  \]
+  \[
+    A\land(A\lor B)=A
+  \]
+  <p>Truth table:</p>
+  <table>
+    <thead><tr><th>\(P\)</th><th>\(Q\)</th><th>\(P\land Q\)</th><th>\(P\lor Q\)</th></tr></thead>
+    <tbody>
+      <tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+      <tr><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+      <tr><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Summations, products, and sequences</h2>
+  \[
+    \sum_{i=1}^{n}i=\frac{n(n+1)}{2}
+  \]
+  \[
+    \prod_{i=1}^{n}i=n!
+  \]
+  \[
+    \sum_{k=0}^{\infty}\frac{x^k}{k!}=e^x
+  \]
+  \[
+    \lim_{n\to\infty}\left(1+\frac{1}{n}\right)^n=e
+  \]
+  <p>Asymptotic notation:</p>
+  \[
+    f(n)=O(n^2),\qquad
+    f(n)=\Theta(n\log n),\qquad
+    f(n)=\Omega(n)
+  \]
+</section>
+
+<section>
+  <h2>Linear algebra and matrices</h2>
+  \[
+    A=
+    \begin{bmatrix}
+      1 & 2 & 3\\
+      4 & 5 & 6\\
+      7 & 8 & 9
+    \end{bmatrix}
+  \]
+  <p>Matrix multiplication:</p>
+  \[
+    C_{ij}=\sum_{k=1}^{n}A_{ik}B_{kj}
+  \]
+  <p>Determinant:</p>
+  \[
+    \det(A)=
+    \begin{vmatrix}
+      a & b\\
+      c & d
+    \end{vmatrix}
+    =ad-bc
+  \]
+  <p>Eigenvalue equation:</p>
+  \[
+    Av=\lambda v
+  \]
+  \[
+    A^T,\quad A^{-1},\quad A^\dagger
+  \]
+</section>
+
+<section>
+  <h2>Graph theory and algorithms</h2>
+  \[
+    G=(V,E),\quad |V|=n,\quad |E|=m
+  \]
+  <p>Adjacency matrix:</p>
+  \[
+    A_{ij}=
+    \begin{cases}
+      1 & \text{if }(v_i,v_j)\in E\\
+      0 & \text{otherwise}
+    \end{cases}
+  \]
+  <p>Shortest path:</p>
+  \[
+    d(u,v)=\min_{p\in P(u,v)}\sum_{e\in p}w(e)
+  \]
+  <p>Algorithmic complexity:</p>
+  \[
+    T(n)=
+    \begin{cases}
+      O(1) & \text{best case}\\
+      O(n\log n) & \text{average case}\\
+      O(n^2) & \text{worst case}
+    \end{cases}
+  \]
+</section>
+
+<section>
+  <h2>Probability and statistics</h2>
+  \[
+    P(A\mid B)=\frac{P(A\cap B)}{P(B)}
+  \]
+  <p>Bayes' theorem:</p>
+  \[
+    P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}
+  \]
+  <p>Expected value:</p>
+  \[
+    E[X]=\sum_{i=1}^{n}x_iP(X=x_i)
+  \]
+  <p>Variance:</p>
+  \[
+    \operatorname{Var}(X)=E[X^2]-E[X]^2
+  \]
+</section>
+<section>
+  <h2>CS</h2>
+  <p><strong>Lambda calculus</strong></p>
+  \[
+    (\lambda x.x)(\lambda y.y)
+  \]
+  \[
+    \lambda f.\lambda x.f(f(x))
+  \]
+  <p><strong>Bitwise operations</strong></p>
+  \[
+    1010_2\oplus1100_2=0110_2
+  \]
+  \[
+    A\land B,\quad A\lor B,\quad A\oplus B,\quad \neg A
+  \]
+  <p><strong>Modular arithmetic</strong></p>
+  \[
+    17\bmod 5=2,\qquad a\equiv b\pmod n
+  \]
+  <p><strong>Cryptography</strong></p>
+  \[
+    c=m^e\bmod n,\qquad m=c^d\bmod n
+  \]
+  <p><strong>Information theory</strong></p>
+  \[
+    H(X)=-\sum_{i=1}^{n}p(x_i)\log_2p(x_i)
+  \]
+</section>
+
+<section>
+  <h2>Nested expressions</h2>
+  \[
+    \left(
+      \frac{
+        \displaystyle\sum_{i=1}^{n}i^2
+      }{
+        \displaystyle\prod_{j=1}^{m}(j+1)
+      }
+    \right)^{\frac{1}{k}}
+  \]
+  \[
+    \left\{
+      x\in\mathbb{R}
+      \;\middle|\;
+      \forall\epsilon>0,\;
+      \exists\delta>0:
+      0<|x-a|<\delta
+      \implies |f(x)-L|<\epsilon
+    \right\}
+  \]
+  \[
+    \underbrace{
+      \sum_{i=1}^{n}
+      \overbrace{(a_i+b_i)}^{\text{inner expression}}
+    }_{\text{outer summation}}
+  \]
+</section>
+
+<section>
+  <h2>Multiline</h2>
+  \[
+    \begin{aligned}
+      f(x)&=(x+1)^2\\
+          &=x^2+2x+1\\
+          &=x(x+2)+1
+    \end{aligned}
+  \]
+  \[
+    \begin{cases}
+      x+y=10\\
+      2x-y=5
+    \end{cases}
+  \]
+</section>
