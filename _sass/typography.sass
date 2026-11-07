@@ -47,12 +47,12 @@ h1
 h2
 	font-weight: 300
 	font-family: variables.$sansFont
-	color: variables.$themeColor
+	color: var(--theme-color)
 	font-size: 1.75em
-	border-bottom: 1px dashed variables.$themeColor
+	border-bottom: 1px dashed var(--theme-color)
 	
 blockquote
-	border-left: 10px solid variables.$themeColor
+	border-left: 10px solid var(--theme-color)
 	font-family: variables.$serifFont
 	padding-left: 10px
 	font-size: 1.25em
@@ -61,16 +61,16 @@ blockquote
 	
 	
 a
-	color: variables.$themeColor
+	color: var(--theme-color)
 	font-weight: bold
 	text-decoration: underline
-	text-decoration-color: variables.$themeColorHalf
-	-webkit-text-decoration-color: variables.$themeColorHalf
+	text-decoration-color: var(--theme-color)Half
+	-webkit-text-decoration-color: var(--theme-color)Half
 	text-decoration-thickness: 2px
 	text-underline-offset: 1px
 	transition: all 0.2s
 	&:hover
-		background-color: variables.$themeColor
+		background-color: var(--theme-color)
 		text-decoration: none
 		color: white
 

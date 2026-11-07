@@ -1,0 +1,54 @@
+@use 'variables'
+@use 'colourdefs'
+@use 'sections_colors'
+
+
+
+.sections
+	display: flex
+	flex-direction: column
+	gap: 2rem
+	
+	a
+		color: unset
+		text-decoration: none
+		font-weight: normal
+		
+		&:hover
+			background-color: var(--theme-color)
+			color: white
+			
+			h2
+				color: white
+				border-bottom-color: white
+
+.section-group h1
+	text-transform: capitalize
+
+.section-list
+	display: grid
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+	gap: 1rem
+
+.section-card
+	padding: 1rem
+	border: 1px solid #ddd
+
+.section-card h2
+	margin-top: 0
+	
+
+
+.section-home
+	h1
+		font-size: 3em
+		line-height: 1.25em
+		
+	ul
+		padding: 0
+		li
+			font-size: 2em
+			line-height: 2em
+			list-style-type: none
+			a
+				font-weight: 300

@@ -1,0 +1,27 @@
+---
+layout: sections
+title: Sections
+---
+
+{% assign all_groups = site.data.sections | map: "groups" | join: "," | split: "," | uniq | sort %}
+
+<div class="sections">
+	{% for group in all_groups %}
+		<section class="section-group">
+			<h1>{{ group | capitalize }}</h1>
+
+			<div class="section-list">
+				{% for section in site.data.sections %}
+					{% if section.groups contains group %}
+						<a href="/sections/{{ section.id }}" class="{{ section.id }}">
+							<article class="section-card">
+								<h2>{{ section.title }}</h2>
+								<p>{{ section.description }}</p>
+							</article>
+						</a>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</section>
+	{% endfor %}
+</div>

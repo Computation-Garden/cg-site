@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>{{ page.title }} - {{ site.title }}</title>
+		{% include header.html %}
+	</head>
+	<body>
+		{% include nav.html %}
+		<div class="hero-jumbotron">
+			<div class="hero-title-block">
+				<h1>All Sections</h1>
+				
+				<div class="home-description">
+					This page lists all sections currently hosted on Computation Garden.
+				</div>
+			</div>
+		</div>
+		
+		<div class="page content">
+			<div class="home-description">
+				<p class="big">Computation Garden currently hosts <strong>{{ site.data.sections | size }}</strong> sections of free-to-read content, organised into <strong>{{ site.data.sections | map: "groups" | join: "," | split: "," | uniq  | size }}</strong> groups.</p>
+			</div>
+	  
+			{{ content }}
+		</div>
+			
+		{% include footer.html %}
+	</body>
+</html>

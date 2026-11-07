@@ -5,4 +5,5 @@ _site
 .DS_Store
 assets/vendor/*
 sections
+_sass/sections_colors
 _data
