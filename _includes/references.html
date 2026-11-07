@@ -1,0 +1,22 @@
+{% if page.references %}
+<div class="references">
+	<h2>References</h2>
+
+	<ol>
+		{% for ref_id in page.references %}
+			{% assign ref = site.data.references.references[ref_id] %}
+
+			{% if ref %}
+				<li id="ref-{{ ref_id }}">
+					{{ ref.authors }}.
+					<em>{{ ref.title }}</em>.
+				</li>
+			{% else %}
+				<li class="missing-reference">
+					Missing reference: {{ ref_id }}
+				</li>
+			{% endif %}
+		{% endfor %}
+	</ol>
+</div>
+{% endif %}

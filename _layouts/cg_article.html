@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>{{ page.title }} - {{ site.title }}</title>
+		{% include header.html %}
+	</head>
+	<body>
+		{% include nav.html %}
+		<div class="page content article">
+			<div class="article-title">
+				<div class="title">
+					{{ page.title }}
+				</div>
+				<div class="meta">
+					~{{ page.content | strip_html | split: ' ' | size | divided_by: 200 }}-minute read · part of <a href="/sections/{{ page.section_id }}">{{ page.section_title }}</a>
+				</div>
+			</div>
+			
+			{{ content }}
+			
+			{% include references.html %}
+		</div>
+			
+		{% include footer.html %}
+		
+		<script src="https://cdn.jsdelivr.net/npm/pele@1/dist/pele.global.js"></script>
+		<script>
+			for (const el of document.querySelectorAll('pre.mermaid')) pele.mount(el, el.textContent);
+		</script>
+	</body>
+</html>
